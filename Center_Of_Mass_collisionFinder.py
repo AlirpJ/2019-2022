@@ -1,3 +1,4 @@
+# Joshua Prila
 print("Hello! This program can solve for velocities after an elastic collision (1D problems only)")
 # Momentum is mass multiplied by velocity
 mass1=input("Enter the mass of object 1 (kg) ")

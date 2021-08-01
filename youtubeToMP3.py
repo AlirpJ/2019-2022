@@ -1,13 +1,14 @@
-# Joshua Prila - last updated April 28, 2020
+# Joshua Prila - last updated August 1, 2021
 # Downloading Youtube videos
 # https://pypi.org/project/pytube/
 
-import pytube
+from pytube3 import YouTube
 
-link = input("Enter the URL of the YouTube Video")
+link = input("Enter the URL of the YouTube Video: \n")
+file = 'defaultDirectory'
+
 print("\nLink is: ",link)
 #YouTube(link).streams.first().download()
 #pl.download_all('/path/to/directory/')
-video = pytube.YouTube(link)
-youtube = video.streams.first()
-youtube.download(r'E:\Thund\Downloads')
+video = YouTube(link)
+video.streams.first().download(file)
